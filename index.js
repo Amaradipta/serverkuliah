@@ -2,14 +2,14 @@ const mahasiswaNim = '1102020';
 const updatedData = {
   nama: 'Kiboy',
   gender: 'L',
-  prodi: 'TI',
+  prodi: 'SI',
   alamat: 'Cisaat'
 };
 
 fetch(`http://localhost:3000/mahasiswa/${mahasiswaNim}`, {
   method: 'PUT',
   headers: {
-    'Content-Type': 'application/json' // Ensure correct content type
+    'Content-Type': 'application/json'
   },
   body: JSON.stringify(updatedData)
 })
